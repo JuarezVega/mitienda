@@ -77,7 +77,7 @@ class productoTest extends \PHPUnit\Framework\TestCase
 	$dbname = "prueba";
 
 	// Establecer conexión con la base de datos
-	$con = new mysqli($servername, $username, $password, $dbname);
+	$conn = new mysqli($servername, $username, $password, $dbname);
 
 	// Verificar la conexión
 	if ($conn->connect_error) {
@@ -101,7 +101,7 @@ class productoTest extends \PHPUnit\Framework\TestCase
 	$conn->close();
 	}
 
-public function testBuscarProductoPrecio()
+	public function testBuscarProductoPrecio()
     {
 
         $servername = "localhost";
